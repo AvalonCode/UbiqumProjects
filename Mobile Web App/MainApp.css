@@ -1,40 +1,68 @@
 
 html, body{
-    height: 100vh;
+    font-family: 'Fira Sans', sans-serif;
+    size: auto;
+}
+
+.logo{
+    flex: 1;
+}
+
+.title{
+    flex: 2.5;
 }
 
 .page{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.sidebar{
+.navbar{
+    justify-content: center;
     display: flex;
-    flex: 1;
+    height: auto;
+    flex-direction: row;
+    position: sticky;
+}
+
+.footer{
+    justify-content: center;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    position: sticky;  
+    bottom: 0px; 
+    width: 100%;
+}
+
+.jumbotron{
+    display: flex;
     flex-direction: column;
-    width: 5%;
-    height: 100vh;
-    text-align: center;
+    margin: 0;
+    padding: 30px;
+    border-radius: 0;
 }
 
 .container{
-    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.home{
+    flex: 1;
+    text-align: center;
 }
 
 .teams{
     flex: 1;
+    text-align: center;
 }
 
 .locations{
     flex: 1;
+    text-align: center;
 }
 
 .schedule{
     flex: 1;
-}
-
- .content{
-    flex: 9;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
