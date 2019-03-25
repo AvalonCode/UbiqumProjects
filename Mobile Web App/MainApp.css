@@ -1,7 +1,7 @@
 
 html, body{
     font-family: 'Fira Sans', sans-serif;
-    size: auto;
+    margin-bottom: 60px;
 }
 
 .logo{
@@ -22,7 +22,8 @@ html, body{
     display: flex;
     height: auto;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 
 .footer{
@@ -30,7 +31,6 @@ html, body{
     display: flex;
     height: auto;
     flex-direction: row;
-    position: sticky;  
     bottom: 0px; 
     width: 100%;
 }
@@ -50,6 +50,7 @@ html, body{
 .home{
     flex: 1;
     text-align: center;
+    text-shadow: 0 0 5px rgb(51, 253, 1);
 }
 
 .teams{
@@ -65,4 +66,13 @@ html, body{
 .schedule{
     flex: 1;
     text-align: center;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: greenyellow;
 }
