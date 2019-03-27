@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NYSL Web App - Locations</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="/path/to/vue.js"></script>
+  <script src="/path/to/vue-router.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="LocationsPage.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+</head>
+<body class= "bg-success">
+  <nav class="navbar navbar-light bg-dark text-white shadow-sm">
+        <div class= "logo">
+          <img src="nysl_logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
+        </div>
+        <div class= "title">
+          <h1><b>Northside Youth Soccer League</b></h1>
+        </div>
+        <div class= "contact">
+          <a href=""><i class="fas fa-info-circle fa-6x"></i></a>
+        </div>
+  </nav>
+    <div class="jumbotron bg-success">
+      <h1 class="display-4 pt-5 mt-5">Maps</h1>
+      <div class= "map">
+        <h2>AJ Katzenmaier Elementary</h2>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6540604261622!2d-87.63123908505524!3d41.90029637200474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1549277486129" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+      </div>  
+      <div class= "map">
+        <h2>Greenbay Elementary</h2>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0256986745426!2d-87.64002798505479!3d41.91380627115881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1549289774528" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+      </div>
+      <div class= "map">
+        <h2>Howard A Yeager Elementary</h2>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5854973846845!2d-87.66511458505448!3d41.92326857056615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1549289841754" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+      </div>
+      <div class= "map">
+        <h2>Marjorie P Hart Elementary</h2>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2917289530833!2d-87.64808628505426!3d41.929582270170805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1549289901973" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+      </div>
+      <div class= "map"> 
+        <h2>North Elementary</h2>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3363025419576!2d-87.64835588505504!3d41.90712867157694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1549289951738" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+      </div>
+      <div class= "map">
+        <h2>South Elementary</h2>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648265644!2d-87.65355538505459!3d41.91978077078475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1549290006275" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+      </div>
+    </div>
+  <nav class="footer navbar navbar-light bg-dark text-white">
+      <div class= "container">
+        <div class= "home">
+            <a href="index.html" class="fas fa-home fa-5x"></i>
+            <p><b>Home</b></p></a>
+        </div>
+        <div class= "teams">
+          <a href="TeamsPage.html"><i class="far fa-futbol fa-5x"></i>
+          <p><b>Teams</b></p></a>
+        </div>
+        <div class= "locations">
+          <i class="fas fa-map-marked-alt fa-5x"></i>
+          <p><b>Locations</b></p>
+        </div>
+        <div class= "schedule">
+          <a href=""><i class="fas fa-calendar-alt fa-5x"></i>
+          <p><b>Schedule</b></p></a>
+        </div>
+      </div>
+</nav>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
