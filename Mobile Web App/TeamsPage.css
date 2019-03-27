@@ -9,7 +9,7 @@ html, body{
 }
 
 .title{
-    flex: 2.5;
+    flex: 3.5;
 }
 
 .page{
@@ -47,7 +47,7 @@ html, body{
 
 .btn{
     height: 150px;
-    margin-bottom: 17%;
+    margin-bottom: 12%;
 }
 
 .container{
@@ -82,4 +82,8 @@ a{
 a:hover{
     text-decoration: none;
     color: greenyellow;
+}
+
+h1{
+    margin-top: 10px;
 }
