@@ -38,13 +38,23 @@ html, body{
 
 .jumbotron{
     display: flex;
-    text-align: center;
     flex-direction: column;
     margin: 0;
     padding: 30px;
     padding-top: 150px;
     border-radius: 0;
-    justify-content: center;
+}
+
+.map{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 100px;
+}
+
+.lead{
+    font-size: 35px;
 }
 
 .container{
@@ -54,7 +64,6 @@ html, body{
 .home{
     flex: 1;
     text-align: center;
-    text-shadow: 0 0 5px rgb(51, 253, 1);
 }
 
 .teams{
@@ -65,6 +74,7 @@ html, body{
 .locations{
     flex: 1;
     text-align: center;
+    text-shadow: 0 0 5px rgb(51, 253, 1);
 }
 
 .schedule{
@@ -93,4 +103,5 @@ h2{
 
 p{
     margin-top: 20px;
+    font-size: 20px;
 }
