@@ -20,18 +20,19 @@ html, body{
 .navbar{
     justify-content: center;
     display: flex;
-    height: auto;
+    height: 10%;
     flex-direction: row;
     position: fixed;
     width: 100%;
 }
 
 .footer{
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     height: auto;
     flex-direction: row;
-    bottom: 0px; 
+    bottom: 0px;
+    height: 10%;
     width: 100%;
 }
 
@@ -40,14 +41,17 @@ html, body{
     flex-direction: column;
     margin: 0;
     padding: 30px;
-    padding-top: 140px;
+    padding-top: 150px;
     border-radius: 0;
-    justify-content: space-around;
 }
 
 .btn{
-    height: 150px;
-    margin-bottom: 12%;
+    flex: 1;
+    margin-top: 100px;
+}
+
+.lead{
+    font-size: 35px;
 }
 
 .container{
@@ -86,4 +90,15 @@ a:hover{
 
 h1{
     margin-top: 10px;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 50px;
+    padding-top: 25px;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 20px;
 }
