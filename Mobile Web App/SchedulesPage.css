@@ -45,10 +45,6 @@ html, body{
     border-radius: 0;
 }
 
-table{
-    
-}
-
 .btn{
     margin-top: 100px;
 }
@@ -104,4 +100,14 @@ h2{
 p{
     margin-top: 20px;
     font-size: 20px;
+}
+
+table{
+    font-size: 40px;
+    text-align: center;
+}
+
+thead{
+    font-size: 45px;
+    text-align: center;
 }
