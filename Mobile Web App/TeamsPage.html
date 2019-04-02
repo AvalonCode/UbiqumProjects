@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>NYSL Web App - Teams</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="/path/to/vue.js"></script>
   <script src="/path/to/vue-router.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="TeamsPage.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-
-
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
 </head>
@@ -27,12 +27,60 @@
         </div>
   </nav>
     <div class="jumbotron bg-success">
-        <button type="button" class="btn btn-light btn-lg btn-block" ><b>Team U1:</b> White Wolves</button>
-        <button type="button" class="btn btn-danger btn-lg btn-block"><b>Team U2:</b> Crimson Corsairs</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block"><b>Team U3:</b> Sapphire Sharks </button>
-        <button type="button" class="btn btn-warning btn-lg btn-block"><b>Team U4:</b> Golden Giants </button>
-        <button type="button" class="btn btn-dark btn-lg btn-block"><b>Team U5:</b> Black Brawlers</button>
-        <button type="button" class="btn btn-info btn-lg btn-block"><b>Team U6:</b> Cyan Cats</button>
+        <button type="button" class="btn btn-light btn-lg btn-block" data-toggle="collapse" data-target="#white" 
+        aria-expanded="false" aria-controls="white"><b>Team U1:</b> White Wolves</button>
+        <div class="collapse" id="white">
+            <div class="card card-body bg-light">
+              <p style="font-size: 30px"><b>Coach:</b> &nbsp; Allura Farla.</p>
+              <p style="font-size: 30px"><b>Players:</b> &nbsp; Joey Fraser, Alexa Jacobs, Edward Davidson, Tommy Smith, Brendan Smith, Matthew Adams,
+                Arthur Ward, Spencer Ellis, Summer Watson, Zak Davis, Harriet Henderson.</p>
+            </div>
+          </div>
+        <button type="button" class="btn btn-danger btn-lg btn-block" data-toggle="collapse" data-target="#red" 
+        aria-expanded="false" aria-controls="red"><b>Team U2:</b> Crimson Corsairs</button>
+        <div class="collapse" id="red">
+            <div class="card card-body bg-danger text-white">
+              <p style="font-size: 30px"><b>Coach:</b> &nbsp; Keith Hodge.</p>
+              <p style="font-size: 30px"><b>Players:</b> &nbsp; James Sullivan, Harry Jordan, Jennifer Reid, Morgan Barrett, Jillian Cooper, Cody Evans,
+                Jacob Miller, Scott Reynolds, Evie Griffiths, Felicity Bentley, Joshua Stevens.</p>
+            </div>
+          </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="collapse" data-target="#blue" 
+        aria-expanded="false" aria-controls="blue"><b>Team U3:</b> Sapphire Sharks </button>
+        <div class="collapse" id="blue">
+            <div class="card card-body bg-primary text-white">
+              <p style="font-size: 30px"><b>Coach:</b> &nbsp; Lance McClain.</p>
+              <p style="font-size: 30px"><b>Players:</b> &nbsp; Molly Williams, Evan Blake, Ewan Burton, Denzel Richardson, Adam Chapman, Gracie Allen,
+                Jace Wong, Clayton Doyle, Frederick Mccarthy, Chloe Green, Gavin Salinas.</p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-warning btn-lg btn-block" data-toggle="collapse" data-target="#gold" 
+        aria-expanded="false" aria-controls="gold"><b>Team U4:</b> Golden Giants </button>
+        <div class="collapse" id="gold">
+            <div class="card card-body bg-warning">
+              <p style="font-size: 30px"><b>Coach:</b> &nbsp; Hunk Garrett.</p>
+              <p style="font-size: 30px"><b>Players:</b> &nbsp; Deacon Campbell, Joseph Marshall, Louise Walker, Sebastian Day, Samantha West, 
+                Harry Mitchell, Clementine Lee, Taylor Harris, Rowan Nguyen, Nick Espinoza, Luke Ramsey.</p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-dark btn-lg btn-block" data-toggle="collapse" data-target="#black" 
+        aria-expanded="false" aria-controls="black"><b>Team U5:</b> Black Brawlers</button>
+        <div class="collapse" id="black">
+            <div class="card card-body bg-dark text-white">
+              <p style="font-size: 30px"><b>Coach:</b> &nbsp; Takashi Shirogane</p>
+              <p style="font-size: 30px"><b>Players:</b> &nbsp; Max Howard, Daniel Turner, Brian Payne, Isla Andrews, Daphne Garner, Kiran Freeman,
+                Gabby Kemp, Ameer Jamal, Robert Kane, Zachary Holland, Scott Lawson.</p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="collapse" data-target="#cyan" 
+        aria-expanded="false" aria-controls="cyan"><b>Team U6:</b> Cyan Cats</button>
+        <div class="collapse" id="cyan">
+            <div class="card card-body bg-info text-white">
+              <p style="font-size: 30px"><b>Coach:</b> &nbsp; Katie Holt</p>
+              <p style="font-size: 30px"><b>Players:</b> &nbsp; Abigail Owen, Toby Cunningham, Christopher Sharp, Eli Hudson, Aurora Fuentes,
+                Erin Shaw, Evelyn Woods, Dennis Wilkins, Amelia Scott, Robert Jenkins, Amy Santiago.</p>
+            </div>
+        </div>
     </div>
   <nav class="footer navbar navbar-light bg-dark text-white">
       <div class= "container">
