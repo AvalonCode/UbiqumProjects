@@ -41,12 +41,14 @@ html, body{
     flex-direction: column;
     margin: 0;
     padding: 30px;
-    padding-top: 150px;
+    padding-top: 22.5%;
+    padding-bottom: 15%;
     border-radius: 0;
 }
 
 .lead{
     font-size: 35px;
+    text-align: justify;
 }
 
 .container{
@@ -88,9 +90,11 @@ h1{
 }
 
 h2{
-    margin-top: 20px;
+    margin-top: 5%;
     font-size: 50px;
     padding-top: 25px;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 p{
