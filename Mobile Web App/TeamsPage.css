@@ -108,3 +108,11 @@ p{
 .collapse{
     font-size: 30px;
 }
+
+.mail{
+    color: greenyellow;
+}
+
+.mail:hover{
+    color: rgb(124, 185, 33);
+}
