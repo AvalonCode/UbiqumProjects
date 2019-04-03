@@ -116,3 +116,11 @@ thead{
     padding-top: 25%;
     padding-bottom: 10%;
 }
+
+.mail{
+    color: greenyellow;
+}
+
+.mail:hover{
+    color: rgb(124, 185, 33);
+}
