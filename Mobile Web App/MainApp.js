@@ -14,5 +14,3 @@ fetch('https://api.myjson.com/bins/111z1i')
   .then(function(data) {
     app.all = data;
   });
-
-// make modal function for info
