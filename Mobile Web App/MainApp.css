@@ -101,3 +101,11 @@ p{
     margin-top: 20px;
     font-size: 20px;
 }
+
+.mail{
+    color: greenyellow;
+}
+
+.mail:hover{
+    color: rgb(124, 185, 33);
+}
