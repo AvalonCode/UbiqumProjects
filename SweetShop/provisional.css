@@ -1,0 +1,33 @@
+
+html, body{
+    background: #f5d9d5;
+    margin: 0;
+    height: auto;
+    font-family: 'Lobster', cursive;
+}
+
+h4{
+    margin: 0;
+    color: rgb(207, 62, 74);
+}
+
+.contact{
+    text-align: right;
+}
+
+.container-fluid{
+    padding-top: 8%;
+}
+
+.title{
+    text-align: center;
+}
+
+.filler{
+    font-size: 24px;
+    color: rgb(207, 62, 74);
+}
+
+.row{
+    margin: 1%;
+}
