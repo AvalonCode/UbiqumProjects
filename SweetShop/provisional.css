@@ -8,7 +8,11 @@ html, body{
 
 h4{
     margin: 0;
-    color: rgb(207, 62, 74);
+    color: rgb(148, 110, 133);
+}
+
+h4:hover{
+    color: rgb(156, 48, 113);
 }
 
 .contact{
@@ -16,10 +20,16 @@ h4{
 }
 
 .container-fluid{
-    padding-top: 8%;
+    padding-top: 7.5%;
 }
 
 .title{
+    text-align: center;
+    background-color: rgb(224, 175, 205);
+    border-radius: 20px;
+}
+
+.subtitle{
     text-align: center;
 }
 
@@ -30,4 +40,14 @@ h4{
 
 .row{
     margin: 1%;
+    margin-bottom: 1.5%;
+}
+
+img{
+    border-radius: 15px;
+}
+
+table{
+    text-align: center;
+    background-color: rgb(224, 175, 205)
 }
