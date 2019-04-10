@@ -49,5 +49,55 @@ img{
 
 table{
     text-align: center;
-    background-color: rgb(224, 175, 205)
+    background-color: #d2ecff;
 }
+
+thead{
+    background-color: #b4cbdb;
+}
+
+.btn{
+    width: 100%;
+    background-color: #b4cbdb00
+}
+
+.btn:hover{
+    background-color: #b4cbdb;
+    cursor: pointer; 
+}
+
+.card{
+    border-width: thin;
+    background-color: rgb(224, 175, 205);
+    font-size: 23px;
+}
+
+
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+   
+    to {
+      opacity: 1;
+    }
+  }
+   
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  .one {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    }
