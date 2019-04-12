@@ -4,6 +4,7 @@ html, body{
     margin: 0;
     height: auto;
     font-family: 'Lobster', cursive;
+    scroll-behavior: smooth;
 }
 
 h4{
@@ -13,6 +14,15 @@ h4{
 
 h4:hover{
     color: rgb(156, 48, 113);
+}
+
+a{
+    color: rgb(148, 110, 133);
+}
+
+a:hover{
+    color: rgb(156, 48, 113);
+    text-decoration: none;
 }
 
 .contact{
@@ -36,6 +46,7 @@ h4:hover{
 .filler{
     font-size: 24px;
     color: rgb(207, 62, 74);
+    text-align: justify;
 }
 
 .row{
@@ -72,6 +83,19 @@ thead{
     font-size: 23px;
 }
 
+.modal-content{
+    background-color: #d2ecff;
+    justify-content: center;
+}
+
+.modal-filler{
+    color: black;
+    font-size: 24px;
+}
+
+#contact:hover{
+    cursor: pointer;
+}
 
 
 .animate {
