@@ -25,16 +25,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mr-auto ml-1">
-            <a class="nav-item nav-link active" href="#"><h4>The Store</h4> <span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="#"><h4>Products</h4></a>
-            <a class="nav-item nav-link" href="#"><h4>Events</h4></a>
-            <a class="nav-item nav-link" href="#"><h4>Locations</h4></a>
+            <a class="nav-item nav-link active" href="#store"><h4>The Store</h4> <span class="sr-only"></span></a>
+            <a class="nav-item nav-link" href="#products"><h4>Products</h4></a>
+            <a class="nav-item nav-link" href="#events"><h4>Events</h4></a>
+            <a class="nav-item nav-link" href="#locations"><h4>Locations</h4></a>
           </div>
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#"><h4>Contact Us</h4></a> <!--  669-221-6251 -->
+            <a id="contact" class="nav-item nav-link" data-toggle="modal" data-target="#modalCenter"><h4>Contact Us</h4></a>
           </div>
         </div>
       </nav>
+      <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" 
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <p class="modal-filler">Phone Number: &nbsp; <a href="tel:669-221-6251"> 669-221-6251</a></p>
+              <p class="modal-filler">Email Address: &nbsp; <a href= "mailto:sweetshopcandy@gmail.com"> 
+                sweetshopcandy@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="store"></div>
       <div class="container-fluid animate fadeIn one">
         <h1 class="title">The Store</h1>
         <div class="row">
@@ -43,9 +56,9 @@
               looking for a place to buy some candy for her little brother Roy, only to find that there wasn't a single
               one! After giving it some thought she decided to open her own shop, where children could find any kind 
               of sweet they craved, and we have been spreading happiness ever since.</p>
-            <p class="filler">The business saw massive success, and Alana was able to open more stores around the 
+            <p id="products" class="filler">The business saw massive success, and Alana was able to open more stores around the 
               country. After 20 wonderful years, you can now find SweetShop stores in San Francisco, New York and 
-              Washington DC.</p>
+              Los Angeles.</p>
           </div>
           <div class="col-6">
             <img class="img-fluid" src="carrusel2.png" style="margin: 1%">
@@ -95,7 +108,7 @@
               <h2 class="subtitle">Cupcakes</h2>
               <p class="filler">If our cakes are too big for you worry not, because we also have cupcakes. These little
                 guys taste just like they look, and they look gorgeous if I do say so myself.</p>
-              <p class="filler">Honestly, this stuff sells itself so I'll only add that we also have events where you 
+              <p id="events" class="filler">Honestly, this stuff sells itself so I'll only add that we also have events where you 
                 can learn some cool cupcake recipes. Again, check the details below in the Events section.</p>
           </div>
           <div class="col-6">
@@ -123,12 +136,12 @@
                     <td>April 10th</td>
                     <td class="btn btn-light" data-toggle="collapse" data-target="#collapseMe2" 
                     aria-expanded="false" aria-controls="collapseMe2">Talk: Is Sugar Bad for Us?</td>                    
-                    <td>Washington DC</td>
+                    <td>Los Angeles</td>
                 </tr>
                 <tr>
                     <td>April 12th</td>
                     <td class="btn btn-light" data-toggle="collapse" data-target="#collapseMe3" 
-                    aria-expanded="false" aria-controls="collapseMe3">Baking class w/ Chef Hector</td>                    
+                    aria-expanded="false" aria-controls="collapseMe3">Cooking class w/ Chef Hector</td>                    
                     <td>San Francisco</td>
                 </tr>
                 <tr>
@@ -141,13 +154,13 @@
                     <td>April 19th</td>
                     <td class="btn btn-light" data-toggle="collapse" data-target="#collapseMe5" 
                     aria-expanded="false" aria-controls="collapseMe5">Baking Class w/ Chef Mark</td>                    
-                    <td>New York</td>
+                    <td id="locations">New York</td>
                 </tr>
                 <tr>
                     <td>April 20th</td>
                     <td class="btn btn-light" data-toggle="collapse" data-target="#collapseMe6" 
                     aria-expanded="false" aria-controls="collapseMe6">Showcase: Candy in Films</td>                    
-                    <td>Washington DC</td>
+                    <td>Los Angeles</td>
                 </tr>
               </tbody>
             </table>
@@ -159,51 +172,101 @@
               <div class="collapse" id="collapseMe">
                   <div class="card card-body">
                       <h5 class="card-title" style="text-align:center; font-size:23px">Free Taste: Bombons</h5>
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                      <b class="filler">12'00 A.M.</b>
+                      <p class="filler">We're having a free taste! If you come to our store in San
+                        Francisco you'll be able to try some of our best bombons. Come before they run out!</p>
                   </div>
               </div>
               <div class="collapse" id="collapseMe2">
                   <div class="card card-body">
                       <h5 class="card-title" style="text-align:center; font-size:23px">Talk: Is Sugar Bad for Us?</h5>
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                      <b class="filler">4'00 P.M.</b>
+                      <p class="filler">Today we invited Dr. Julia Deirdre to our LA store to give a talk 
+                        about sugar and its effects on our body. Afterwards we will have a debate on the topic 
+                        with everyone who wants to participate.</p>
                   </div>
               </div>
               <div class="collapse" id="collapseMe3">
                     <div class="card card-body">
-                        <h5 class="card-title" style="text-align:center; font-size:23px">Baking Class w/ Chef Hector</h5>
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        <h5 class="card-title" style="text-align:center; font-size:23px">Cooking Class w/ Chef Hector</h5>
+                        <b class="filler">5'00 P.M.</b>
+                        <p class="filler">Remember those bombons from the free taste a few days ago? Well,
+                          Chef Hector Armads is coming to our San Francisco store to teach you how to make them!
+                          It doesn't matter if you're a newbie or a pro cook, anyone is welcome!</p>
                     </div>
               </div>
               <div class="collapse" id="collapseMe4">
                   <div class="card card-body">
                     <h5 class="card-title" style="text-align:center; font-size:23px">Free Taste: Pumpkin Pie</h5>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <b class="filler">11'00 A.M.</b>
+                    <p class="filler">If you're in New York it's your lucky day: we're offering some of our delicious 
+                      pumpkin pie for free! Come have a slice...and maybe buy one too?</p>
                   </div>
               </div>
               <div class="collapse" id="collapseMe5">
                   <div class="card card-body">
                     <h5 class="card-title" style="text-align:center; font-size:23px">Baking Class w/ Chef Mark</h5>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <b class="filler">4'30 P.M.</b>
+                    <p class="filler">Pumpkin pie doesn't make itself (unfortunately), so today we're having Chef Mark 
+                      Arvis in our New York store to teach you how to make one. Just like for our other cooking classes you don't need to 
+                      be a top-tier chef to come, so don't let that stop you!</p>
                   </div>
               </div>
               <div class="collapse" id="collapseMe6">
                   <div class="card card-body">
                     <h5 class="card-title" style="text-align:center; font-size:23px">Showcase: Candy in Films</h5>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <b class="filler">12'00 A.M.</b>
+                    <p class="filler">The last event for this month takes place in our LA store. We'll 
+                      be showcasing some of the most famous candy in film: Wonka chocolate bars, Harry Potter's 
+                      Bertie Bott's Every Flavour Beans, and much more! Of course just watching is a bit lame, so 
+                      you'll be able to try them out too!</p>
                   </div>
               </div>
           </div>
       </div>
-      <h1 class="title">Locations</h1>
+      <h1 id="locations" class="title">Locations</h1>
       <div class="row">
         <div class="col-6">
-            <h2 class="subtitle">Cupcakes</h2>
+            <h2 class="subtitle"> &nbsp; </h2>
+            <p class="filler">Here are the locations for all our stores so that you don't get lost! You didn't hear it 
+              from me, but we may be about to open a couple more... when we do you can find out where right here!</p>
+            <p class="filler">Come to the one closest to you and make sure to attend to one of our awesome events, or 
+              just come get some of that sweet, sweet candy!</p>
         </div>
         <div class="col-6">
-          <h2 class="subtitle">Cupcakes</h2>
-          <img class="img-fluid" src="cupcakes.jpg" style="margin: 1%">
+          <h2 class="subtitle">San Francisco</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1050838503147!2d-122.40690968519002
+          !3d37.78757701919679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858088f3a053c5%3A0x335dcd2e2fc242
+          a7!2s60+Grant+Ave%2C+San+Francisco%2C+CA+94108%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1554977259831!5m2!1ses!2ses" 
+          width="556.222" height="312.869" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-    </div>
+      </div>
+      <div class="row">
+          <div class="col-6">
+              <h2 class="subtitle">New York</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.083801467815!2d-73.98655178509395!
+              3d40.76018154260445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855e1e3165d%3A0x1262dc203132e
+              bb!2s1600+Broadway%2C+New+York%2C+NY+10019%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1554978330313!5m2!1ses!2ses" 
+              width="556.222" height="312.869" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="col-6">
+            <h2 class="subtitle">Los Angeles</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653.5287822371915!2d-118.4991135419966
+            !3d34.016733318369305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cf80b36f0b%3A0xb6fcadab16e5
+            ddde!2s262-274+Arizona+Ave%2C+Santa+Monica%2C+CA+90401%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1554979751641!5m2!1ses
+            !2ses" width="556.222" height="312.869" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          </div>
+      <div class="row">
+          <div class="col-6">
+              <h2 class="subtitle">Coming Soon...</h2>
+              <img class="img-fluid" src="candy2.jpg" style="margin: 1%">
+          </div>
+          <div class="col-6">
+            <h2 class="subtitle">Coming Soon...</h2>
+            <img class="img-fluid" src="candy2.jpg" style="margin: 1%">
+          </div>
+      </div>
   </div> 
  <script defer src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
  <script defer src="provisional.js"></script>
