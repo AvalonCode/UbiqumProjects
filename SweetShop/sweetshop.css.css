@@ -1,0 +1,127 @@
+
+html, body{
+    background: #f5d9d5;
+    margin: 0;
+    height: auto;
+    font-family: 'Lobster', cursive;
+    scroll-behavior: smooth;
+}
+
+h4{
+    margin: 0;
+    color: rgb(148, 110, 133);
+}
+
+h4:hover{
+    color: rgb(156, 48, 113);
+}
+
+a{
+    color: rgb(148, 110, 133);
+}
+
+a:hover{
+    color: rgb(156, 48, 113);
+    text-decoration: none;
+}
+
+.contact{
+    text-align: right;
+}
+
+.container-fluid{
+    padding-top: 7.5%;
+}
+
+.title{
+    text-align: center;
+    background-color: rgb(224, 175, 205);
+    border-radius: 20px;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.filler{
+    font-size: 24px;
+    color: rgb(207, 62, 74);
+    text-align: justify;
+}
+
+.row{
+    margin: 1%;
+    margin-bottom: 1.5%;
+}
+
+img{
+    border-radius: 15px;
+}
+
+table{
+    text-align: center;
+    background-color: #d2ecff;
+}
+
+thead{
+    background-color: #b4cbdb;
+}
+
+.btn{
+    width: 100%;
+    background-color: #b4cbdb00
+}
+
+.btn:hover{
+    background-color: #b4cbdb;
+    cursor: pointer; 
+}
+
+.card{
+    border-width: thin;
+    background-color: rgb(224, 175, 205);
+    font-size: 23px;
+}
+
+.modal-content{
+    background-color: #d2ecff;
+    justify-content: center;
+}
+
+.modal-filler{
+    color: black;
+    font-size: 24px;
+}
+
+#contact:hover{
+    cursor: pointer;
+}
+
+
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+   
+    to {
+      opacity: 1;
+    }
+  }
+   
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  .one {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    }
